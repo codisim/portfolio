@@ -18,33 +18,6 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState<string>("all")
   
   const projects = [
-    // {
-    //   title: "Task Management App",
-    //   description: "A productivity app for managing tasks with features like drag-and-drop, filtering, and team collaboration.",
-    //   image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    //   tags: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-    //   category: "fullstack",
-    //   demoLink: "#",
-    //   githubLink: "#"
-    // },
-    // {
-    //   title: "Weather Dashboard",
-    //   description: "A weather dashboard showing current conditions and forecasts using data from a weather API.",
-    //   image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    //   tags: ["React", "API Integration", "Chart.js"],
-    //   category: "frontend",
-    //   demoLink: "#",
-    //   githubLink: "#"
-    // },
-    // {
-    //   title: "Blog Platform",
-    //   description: "A content management system for creating and publishing blog posts with user authentication.",
-    //   image: "https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    //   tags: ["React", "Node.js", "Express", "MongoDB"],
-    //   category: "fullstack",
-    //   demoLink: "#",
-    //   githubLink: "#"
-    // },
     {
       title: "RESTful API Service",
       description: "A backend service providing RESTful APIs for a mobile application with authentication and data validation.",
@@ -71,7 +44,7 @@ export default function Projects() {
       tags: ["React", "Next.js", "Tailwind CSS"],
       category: "frontend",
       demoLink: "https://dev-waliullah.vercel.app/",
-      githubLink: "https://github.com/gowaliullah/portfolio"
+      githubLink: "https://github.com/tswaliullah/portfolio"
     }
   ]
 
