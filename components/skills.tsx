@@ -7,19 +7,25 @@ import assets from "@/public/assets";
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Langeages",
       skills: [
    
-        { name: "Golang", icon: assets.ts },
-        { name: "TypeScript", icon: assets.ts },
-        { name: "JavaScript", icon: assets.js },
-        { name: "PostgreSQL", icon: assets.js },
-        { name: "REST API", icon: assets.restApi },
-        { name: "Docker", icon: "🔄" },
-        { name: "Git", icon: "🔄" },
-        { name: "Github", icon: "🔄" },
-        { name: "VS Code", icon: "🔄" },
-        { name: "Postman", icon: assets.restApi },
+        { name: "JavaScript"},
+        { name: "TypeScript" },
+        { name: "Node.js" },
+        { name: "Express.js" },
+        { name: "PostgreSQL" },
+        { name: "Prisma"},
+        { name: "React.js"},
+        { name: "Next.js"},
+        { name: "MongoDB"},
+        { name: "Mongoose"},
+        // { name: "REST API"},
+        { name: "Golang"},
+        { name: "Docker"},
+        { name: "Git"},
+        { name: "Github"},
+        { name: "VS Code"},
+        { name: "Postman" },
       ],
     },
    
@@ -37,7 +43,6 @@ export default function Skills() {
         >
           
           <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
           
         </motion.div>
 
@@ -50,9 +55,6 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <h3 className="text-xl font-semibold mb-6 text-center">
-                {category.title}
-              </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {category.skills.map((skill, j) => (
                   <motion.div
