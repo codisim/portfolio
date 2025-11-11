@@ -43,9 +43,9 @@ export default function Hero() {
                   />
                 </span>
               </h1>
-              <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
-                I've been focusing on developing RESTful APIs, backend services, and learning Go's powerful features like concurrency and memory efficiency. I'm eager to contribute to impactful backend systems and continue growing backend engineer.
-              </p>
+      <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
+A self-motivated and passionate developer skilled in building dynamic, scalable web applications using modern frontend and backend technologies. Always eager to learn, improve, and craft impactful digital solutions that deliver real value.
+</p>
 
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button asChild size="lg" className="group">

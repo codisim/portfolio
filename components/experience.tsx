@@ -12,41 +12,43 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Experience() {
-  const workExperience = [
-    {
-      company: "Asian It Inc.",
-      location: "Sirajgong, Bangladesh",
-      title: "Junior Front End Developer",
-      period: "June, 2024 - Sep, 2024",
-      description:
-        "Worked as a Junior Front-End Developer during my internship, contributing to the development of various websites such as E-commerce platforms, Agency website, Portfolios, School management dashboard panels, Medical websites",
-      responsibilities: [
-        "Built interactive user interfaces with Next.js",
-        "Implemented RESTful APIs using Express.js and Node.js",
-        "Implemented database solutions using MongoDB and Mongoose",
-        "Collaborated with UX designers to implement intuitive user interfaces",
-      ],
-    },
-  ];
+const workExperience = [
+  {
+    company: "Asian It Inc.",
+    location: "Sirajgong, Bangladesh",
+    title: "Junior Front End Developer (Intern)",
+    period: "June 2024 – Sep 2024",
+    description:
+      "Contributed to full-stack web applications including e-commerce, agency sites, school dashboards, and medical platforms.",
+    responsibilities: [
+      "Built interactive UIs with Next.js and Tailwind CSS",
+      "Developed RESTful APIs using Express.js and Node.js",
+      "Designed MongoDB schemas and queries with Mongoose",
+      "Collaborated with designers to implement responsive, user-friendly interfaces",
+    ],
+  },
+];
 
-  const education = [
-    {
-      degree: "Next Level Web Development",
-      institution: "Programming Hero",
-      location: "Dhaka",
-      period: "September, 2023 - March 2024",
-      description:
-        "Explored TypeScript, Next.js, Redux, Mongoose, Node.js, PostgreSQL, and Prisma for building full-stack web applications.",
-    },
-    {
-      degree: "Bachelor Of BITS",
-      institution: "Islamic University, Kushtia",
-      location: "Kushtia, Bangladesh",
-      period: "2023 - 2027",
-      description:
-        "Specialized in web technologies and software engineering. Completed thesis on scalable web architectures.",
-    },
-  ];
+const education = [
+  {
+    type: "Bootcamp",
+    program: "Next Level Web Development",
+    institution: "Programming Hero",
+    location: "Dhaka, Bangladesh",
+    period: "Sep 2023 – Mar 2024",
+    description:
+      "Mastered TypeScript, Next.js, Redux, Node.js, PostgreSQL, Prisma, and full-stack development.",
+  },
+  {
+    type: "Degree",
+    degree: "Bachelor of BITS",
+    institution: "Islamic University, Kushtia",
+    location: "Kushtia, Bangladesh",
+    period: "2023 – Present",
+    description:
+      "Pursuing specialization in web technologies and software engineering. Current thesis: Scalable Web Architectures.",
+  },
+];
 
   return (
     <section id="experience" className="py-20">
