@@ -63,17 +63,13 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-            A selection of my recent work showcasing my skills and expertise in web development.
-          </p>
         </motion.div>
 
         <Tabs defaultValue="all" value={activeTab} onValueChange={setActiveTab} className="w-full mb-12">
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
             <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="frontend">Frontend</TabsTrigger>
             <TabsTrigger value="backend">Backend</TabsTrigger>
+            <TabsTrigger value="frontend">Frontend</TabsTrigger>
           </TabsList>
         </Tabs>
 

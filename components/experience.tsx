@@ -59,11 +59,6 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold mb-4">Experience & Education</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-            My professional journey and educational background that have shaped
-            my expertise in web development.
-          </p>
         </motion.div>
 
         <Tabs defaultValue="work" className="w-full">

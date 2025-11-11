@@ -58,11 +58,6 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold mb-4">Services I Offer</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-            Specialized web development services tailored to meet your specific
-            needs and requirements.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

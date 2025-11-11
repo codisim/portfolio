@@ -113,6 +113,13 @@
 } */
 
 
+@media (min-width: 640px) {
+    .sm\:text-base {
+        line-height: .5rem;
+    }
+}
+
+
 .section-title {
   @apply relative inline-block;
 }

@@ -85,12 +85,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-            Have a question or want to work together? Feel free to contact me
-            using the form below.
-          </p>
+          <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
