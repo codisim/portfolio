@@ -1,8 +1,9 @@
 "use client";
 
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -23,11 +24,23 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="relative z-10"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-">
                 <span className="block">Hi, I'm</span>
-                <span className="text-primary block mt-2">
-                  {/* Jr. Software Engineer */}
-                  Backend Developer
+                <span className="text-primary block mt-2 h-12 md:h-20">
+                  <TypeAnimation
+                    sequence={[
+                      "Full Stack Developer",
+                      2000,
+                      "Backend Developer",
+                      2000,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                    cursor={true}
+                    preRenderFirstString={true}
+                    className="inline-block"
+                  />
                 </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
@@ -117,8 +130,8 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-4 -right-4 p-5">
                 <div className="bg-secondary/80 text-secondary-foreground px-7 py-2.5 rounded-full text-sm font-medium border border-transparent hover:animate-border-animation">
-                  {/* Backend Developer */}
-                  Jr. Software Engineer
+                  Backend Developer
+                  {/* Jr. Software Engineer */}
                 </div>
               </div>
             </motion.div>
