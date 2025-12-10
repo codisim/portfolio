@@ -37,15 +37,6 @@ export default function Projects() {
       githubLink: "https://github.com/tswaliullah/ecommerce"
     },  
     {
-      title: "Chit Chat Application",
-      description: "A real-time chat application with group chats.",
-      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
-      tags: ["WebSockets", "JavaScript", "Node.js", "Express", "React"],
-      category: "fullstack",
-      demoLink: "https://text-here.vercel.ap",
-      githubLink: "https://github.com/tswaliullah/chit-chat-server"
-    },  
-    {
       title: "Real Estate Project",
       description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
       image: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -72,6 +63,15 @@ export default function Projects() {
       category: "frontend",
       demoLink: "https://dev-waliullah.vercel.app",
       githubLink: "https://github.com/tswaliullah/portfolio"
+    },
+    {
+      title: "Chit Chat Application",
+      description: "A real-time chat application with group chats.",
+      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
+      tags: ["WebSockets", "JavaScript", "Node.js", "Express", "React"],
+      category: "fullstack",
+      demoLink: "https://text-here.vercel.ap",
+      githubLink: "https://github.com/tswaliullah/chit-chat-server"
     }
   ]
 
