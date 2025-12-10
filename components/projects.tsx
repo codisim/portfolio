@@ -26,16 +26,7 @@ export default function Projects() {
       category: "backend",
       demoLink: "https://github.com/tswaliullah/care-point-server",
       githubLink: "https://github.com/tswaliullah/care-point-server"
-    },  
-    {
-      title: "Simple E-Commerce Website",
-      description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
-      image: "https://i.ibb.co.com/LhDtJDdn/image.png",
-      tags: ["Golang", "Postgresql", "Jwt"],
-      category: "backend",
-      demoLink: "https://github.com/tswaliullah/ecommerce", 
-      githubLink: "https://github.com/tswaliullah/ecommerce"
-    },  
+    },   
     {
       title: "Real Estate Project",
       description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
@@ -64,6 +55,15 @@ export default function Projects() {
       demoLink: "https://dev-waliullah.vercel.app",
       githubLink: "https://github.com/tswaliullah/portfolio"
     },
+    {
+      title: "Simple E-Commerce Website",
+      description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
+      image: "https://i.ibb.co.com/LhDtJDdn/image.png",
+      tags: ["Golang", "Postgresql", "Jwt"],
+      category: "backend",
+      demoLink: "https://github.com/tswaliullah/ecommerce", 
+      githubLink: "https://github.com/tswaliullah/ecommerce"
+    }, 
     {
       title: "Chit Chat Application",
       description: "A real-time chat application with group chats.",
