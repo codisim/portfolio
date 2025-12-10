@@ -19,14 +19,14 @@ export default function Projects() {
   
   const projects = [
     {
-      title: "RESTful API Service",
-      description: "A backend service providing RESTful APIs for a mobile application with authentication and data validation.",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["Typescript", "Express", "MongoDB", "JWT"],
-      category: "backend",
-      demoLink: "https://github.com/engWaliullah/University_Management",
-      githubLink: "#https://github.com/engWaliullah/University_Management"
-    },
+      title: "Chit Chat Application",
+      description: "A real-time chat application with group chats.",
+      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
+      tags: ["WebSockets", "JavaScript", "Node.js", "Express", "React"],
+      category: "fullstack",
+      demoLink: "https://text-here.vercel.ap",
+      githubLink: "https://github.com/tswaliullah/chit-chat-server"
+    },  
     {
       title: "Real Estate Project",
       description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
@@ -36,6 +36,15 @@ export default function Projects() {
       demoLink: "https://real-state-client-peach.vercel.app",
       githubLink: "https://github.com/engWaliullah/real-state-project-client",
       backend: "https://github.com/engWaliullah/real-state-backend"
+    },
+    {
+      title: "RESTful API Service",
+      description: "A backend service providing RESTful APIs for a mobile application with authentication and data validation.",
+      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      tags: ["Typescript", "Express", "MongoDB", "JWT"],
+      category: "backend",
+      demoLink: "https://github.com/engWaliullah/University_Management",
+      githubLink: "#https://github.com/engWaliullah/University_Management"
     },
     {
       title: "Portfolio Website",
