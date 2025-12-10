@@ -21,19 +21,19 @@ export default function Projects() {
     {
       title: "Telemedicine Platform",
       description: "A backend service for a telemedicine platform enabling virtual consultations between patients and healthcare providers. AI driven doctor suggestions. Role based access control for patients, doctors, and admins. Appointment scheduling, medical records management, payment and testimonial management.",
-      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
+      image: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
       tags: ["Typescript", "Express", "Postgresql", "Prisma", "JWT"],
       category: "backend",
-      demoLink: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
+      demoLink: "https://github.com/tswaliullah/care-point-server",
       githubLink: "https://github.com/tswaliullah/care-point-server"
     },  
     {
       title: "Simple E-Commerce Website",
       description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
-      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
+      image: "https://i.ibb.co.com/LhDtJDdn/image.png",
       tags: ["Golang", "Postgresql", "Jwt"],
       category: "backend",
-      demoLink: "https://i.ibb.co.com/LhDtJDdn/image.png",
+      demoLink: "https://github.com/tswaliullah/ecommerce", 
       githubLink: "https://github.com/tswaliullah/ecommerce"
     },  
     {
