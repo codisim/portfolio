@@ -19,6 +19,15 @@ export default function Projects() {
   
   const projects = [
     {
+      title: "Simple E-Commerce Website",
+      description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
+      image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
+      tags: ["Golang", "Postgresql", "Jwt"],
+      category: "backend",
+      demoLink: "https://i.ibb.co.com/LhDtJDdn/image.png",
+      githubLink: "https://github.com/tswaliullah/ecommerce"
+    },  
+    {
       title: "Chit Chat Application",
       description: "A real-time chat application with group chats.",
       image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
