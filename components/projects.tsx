@@ -38,7 +38,7 @@ export default function Projects() {
       backend: "https://github.com/engWaliullah/real-state-backend"
     },
     {
-      title: "Uviversity Management System",
+      title: "University Management System",
       description: "A backend service providing RESTful APIs with Role based access control for managing university data. Faculty, Department, offerd course, enrolled course, student, and admin management.",
       image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       tags: ["Typescript", "Express", "MongoDB", "JWT"],
