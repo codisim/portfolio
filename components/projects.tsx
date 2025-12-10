@@ -38,8 +38,8 @@ export default function Projects() {
       backend: "https://github.com/engWaliullah/real-state-backend"
     },
     {
-      title: "RESTful API Service",
-      description: "A backend service providing RESTful APIs for a mobile application with authentication and data validation.",
+      title: "Uviversity Management System",
+      description: "A backend service providing RESTful APIs with Role based access control for managing university data. Faculty, Department, offerd course, enrolled course, student, and admin management.",
       image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       tags: ["Typescript", "Express", "MongoDB", "JWT"],
       category: "backend",
@@ -49,10 +49,10 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing work experience, skills, and projects.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://i.ibb.co.com/TDdJxQf7/image.png",
       tags: ["React", "Next.js", "Tailwind CSS"],
       category: "frontend",
-      demoLink: "https://dev-waliullah.vercel.app/",
+      demoLink: "https://dev-waliullah.vercel.app",
       githubLink: "https://github.com/tswaliullah/portfolio"
     }
   ]
