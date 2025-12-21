@@ -25,13 +25,13 @@ export default function Hero() {
               className="relative z-10"
             >
              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-">
-                <span className="block">Hi, I'm</span>
+                <span className="block">Hi, I'm Waliullah</span>
                 <span className="text-primary block mt-2 h-12 md:h-20">
                   <TypeAnimation
                     sequence={[
-                      "Full Stack Developer",
+                      "A Full Stack Developer",
                       2000,
-                      "Backend Developer",
+                      "A Backend Developer",
                       2000,
                     ]}
                     wrapper="span"
