@@ -5,10 +5,8 @@ import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { 
   Tabs, 
-  TabsContent, 
   TabsList, 
   TabsTrigger 
 } from '@/components/ui/tabs'
@@ -70,7 +68,7 @@ export default function Projects() {
       image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
       tags: ["WebSockets", "JavaScript", "Node.js", "Express", "React"],
       category: "fullstack",
-      demoLink: "https://text-here.vercel.ap",
+      demoLink: "https://text-here.vercel.app",
       githubLink: "https://github.com/tswaliullah/chit-chat-server"
     }
   ]
