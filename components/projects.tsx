@@ -44,7 +44,7 @@ export default function Projects() {
       tags: ["Typescript", "Express", "MongoDB", "JWT"],
       category: "backend",
       demoLink: "https://github.com/engWaliullah/University_Management",
-      githubLink: "#https://github.com/engWaliullah/University_Management"
+      githubLink: "https://github.com/engWaliullah/University_Management"
     },
     {
       title: "Portfolio Website",
