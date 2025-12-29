@@ -4,11 +4,13 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import WhatsapLive from '@/components/whatsapLive';
 import ScrollToTop from '@/components/scroll-to-top';
 
 const inter = Inter({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: 'Waliullah | Software Engineer',
@@ -33,6 +35,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
+             <GoogleAnalytics gaId="G-T3WXXG9GFF" />
             <Footer />
             {/* <ScrollToTop /> */}
             <WhatsapLive />
