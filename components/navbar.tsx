@@ -86,7 +86,7 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">zz
+          <div className="flex md:hidden items-center gap-2">
             <ThemeToggle />
             <Button
               variant="ghost"
