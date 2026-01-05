@@ -1,19 +1,16 @@
 "use client";
 
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
-import { TypeAnimation } from "react-type-animation";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-background text-foreground relative"
-      // "pt-52 pb-20 md:pt-52 md:pb-32 hero-gradient
-    >
+      className="min-h h-screen flex items-center justify-center bg-background text-foreground relative font-mon over">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,white_0%,transparent_100%)]"></div> */}
       <div className="pt-32 pb-20 md:pt-52 md:pb-32 hero-gradien">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -23,9 +20,10 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="relative z-10"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-">
-                <span className="block">Hi, I'm Waliullah</span>
-                <span className="text-primary block mt-2 h-12 md:h-20">
+              {/* Mid-level software engineer with experience in full-stack development, cloud infrastructure, and system optimization. */}
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4">
+                <span className="block">Mohammad Waliullah</span>
+                {/* <span className="text-primary block mt-2 h-12 md:h-20">
                   <TypeAnimation
                     sequence={[
                       "A Full Stack Developer",
@@ -40,13 +38,11 @@ export default function Hero() {
                     preRenderFirstString={true}
                     className="inline-block"
                   />
-                </span>
+                </span> */}
               </h1>
-              <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-xl">
-                A self-motivated and passionate developer skilled in building
-                dynamic, scalable web applications using modern frontend and
-                backend technologies. Always eager to learn, improve, and craft
-                impactful digital solutions that deliver real value.
+              <p className="text-muted-foreground text-sm md:text-xl mb-8 max-w-xl">
+                Mid-level software engineer with experience in full-stack
+                development, cloud infrastructure, and system optimization.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">
@@ -66,7 +62,7 @@ export default function Hero() {
                 </Button>
               </div>
 
-              <div className="flex gap-4 relative z-20">
+              {/* <div className="flex gap-4 relative z-20">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
@@ -109,10 +105,53 @@ export default function Hero() {
                     <Mail className="h-5 w-5" />
                   </Link>
                 </motion.div>
+              </div> */}
+
+              <div className="flex gap-4 relative z-20 text-xs">
+                
+                  <div className="px-4 py-2 rounded-full bg-primary/10 border border-primary/5 hover:border-primary/10 duration-200">  
+                    <span>Typescript</span>
+                  </div>
+
+                  <div className="px-4 py-2 rounded-full bg-primary/10 border border-primary/5 hover:border-primary/10 duration-200">  
+                    <span>Node.js</span>
+                  </div>
+
+                  <div className="px-4 py-2 rounded-full bg-primary/10 border border-primary/5 hover:border-primary/10 duration-200">  
+                    <span>PostgreSQL</span>
+                  </div>
+
+                  <div className="px-4 py-2 rounded-full bg-primary/10 border border-primary/5 hover:border-primary/10 duration-200">  
+                    <span>Docker</span>
+                  </div>
+                
+
+               
               </div>
             </motion.div>
 
-         
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative hidden lg:block"
+            >
+              <div className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-1">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
+                  <img
+                    src="https://i.ibb.co.com/3mjLPnwC/Whats-App-Image-2025-09-21-at-9-24-56-PM.jpg"
+                    alt="Developer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="absolute -bottom-4 -right-4 p-5">
+                <div className="bg-secondary/80 text-secondary-foreground px-7 py-2.5 rounded-full text-sm font-medium border border-transparent hover:animate-border-animation">
+                  Backend Developer
+                  {/* Jr. Software Engineer */}
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>

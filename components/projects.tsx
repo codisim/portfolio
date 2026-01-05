@@ -78,7 +78,7 @@ export default function Projects() {
     : projects.filter(project => project.category === activeTab)
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 bg-muted/30">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

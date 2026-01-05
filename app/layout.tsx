@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <link rel="icon" type="image/png" href="/fabicon.png" />
-      <body className={inter.className}>
+      <body className={inter.className} font-mono>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,6 +33,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
+            
             <Navbar />
             <main className="flex-1">{children}</main>
              <GoogleAnalytics gaId="G-T3WXXG9GFF" />
