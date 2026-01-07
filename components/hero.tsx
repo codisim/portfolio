@@ -4,6 +4,9 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+import heroImage from "@/public/assets/images/express.png";
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -138,8 +141,8 @@ export default function Hero() {
             >
               <div className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-1">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-                  <img
-                    src="https://i.ibb.co.com/3mjLPnwC/Whats-App-Image-2025-09-21-at-9-24-56-PM.jpg"
+                  <Image
+                    src={heroImage}
                     alt="Developer"
                     className="w-full h-full object-cover"
                   />
