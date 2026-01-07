@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-import heroImage from "@/public/assets/images/express.png";
+import heroImage from "@/public/assets/images/codisim, software-engineer, backend-developer, node.js, typescript, react.js, golang, javascript, postgresql (5).jpg";
 import Image from "next/image";
 
 export default function Hero() {
@@ -151,7 +151,6 @@ export default function Hero() {
               <div className="absolute -bottom-4 -right-4 p-5">
                 <div className="bg-secondary/80 text-secondary-foreground px-7 py-2.5 rounded-full text-sm font-medium border border-transparent hover:animate-border-animation">
                   Backend Developer
-                  {/* Jr. Software Engineer */}
                 </div>
               </div>
             </motion.div>
