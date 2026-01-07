@@ -6,15 +6,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-muted/50 py-12 border-t border-border ">
+    <footer className="bg-muted/50 py-8 border-t border-border ">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground">
-            © {currentYear} Developer{" "}
-            <span className="text-violet-700">Waliullah</span>. All rights
-            reserved.
-          </p>
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+        <p className="text-muted-foreground flex items-center justify-center gap-2 text-sm">
+          © {currentYear}
+          <span className="text-violet-600 font-semibold">
+            <Link
+              href="/https://codisim.com"
+              className="hover:text-violet-700 flex items-center gap-1.5 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Codisim.
+            </Link>
+          </span>
+           All rights reserved.
+        </p>
+        {/* <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <Link
               href="https://github.com/tswaliullah/portfolio"
               className="hover:text-primary flex items-center gap-1.5 transition-colors"
@@ -33,9 +41,8 @@ export default function Footer() {
               <GoRepoForked />
               FORK
             </Link>
-          </div>
+          </div> */}
         </div>
-      </div>
     </footer>
   );
 }
