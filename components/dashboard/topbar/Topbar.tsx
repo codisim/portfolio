@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { BiNotification } from "react-icons/bi";
 import { Menu, Search, X } from "lucide-react";
-import Modal from "@/components/ui/Modal";
-import AddProperty from "../addProperty/AddProperty";
 
 export function DashboardTopbar() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -50,7 +48,7 @@ export function DashboardTopbar() {
             Add Property
           </button>
 
-         <AddProperty isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
+         {/* <AddProperty isModalOpen={isModalOpen} setModalOpen={setModalOpen} /> */}
         </div>
 
         <button className="rounded-md border border-gray-300 p-2 text-gray-500 hover:bg-gray-100">

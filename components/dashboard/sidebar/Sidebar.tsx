@@ -40,7 +40,7 @@ export function DashboardSidebar() {
           className="flex items-center gap-2 font-semibold"
         >
           <span className="text-xl">📊</span>
-          <span>Acme Inc</span>
+          <span>Codisim</span>
         </Link>
       </div>
       <nav className="p-4 space-y-1">
