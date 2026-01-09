@@ -41,21 +41,17 @@ export default function Contact() {
     setError(null);
 
     try {
-      // 2. Call the server action directly with formData
       const result = await sendEmail(formData);
 
       if (result.success) {
         setSubmitted(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
         
-        // Reset success message after 5 seconds
         setTimeout(() => setSubmitted(false), 5000);
       } else {
-        // Handle logic errors returned from the server
         setError("Failed to send email. Please try again later.");
       }
     } catch (err) {
-      // Handle network or unexpected errors
       setError("Something went wrong. Please check your connection.");
       console.error("Submission error:", err);
     } finally {
