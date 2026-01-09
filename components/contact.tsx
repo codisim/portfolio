@@ -16,7 +16,7 @@ import {
   Send,
 } from "lucide-react";
 import Link from "next/link";
-import resend from "../../lib/resend"
+import sendEmail from "@/lib/resend";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -51,7 +51,6 @@ export default function Contact() {
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
-      // 3. Handle Error
       setError("Something went wrong. Please try again later.");
       console.error("Submission error:", err);
     } finally {
