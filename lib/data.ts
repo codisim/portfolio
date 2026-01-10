@@ -66,7 +66,7 @@ export const developerData = {
     },
   ];
   
-  // Services Data
+
   export const servicesData = [
     {
       id: 1,
