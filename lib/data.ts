@@ -106,7 +106,7 @@ export const developerData = {
     },
   ];
   
-  // Testimonials Data
+  
   export const testimonialsData = [
     {
       id: 1,
