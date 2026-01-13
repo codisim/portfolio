@@ -71,7 +71,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="https://github.com/tswaliullah"
+                    href="https://github.com/codisim"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 inline-flex items-center justify-center rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-200"

@@ -22,8 +22,8 @@ export default function Projects() {
       image: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
       tags: ["Typescript", "Express", "Postgresql", "Prisma", "JWT"],
       category: "backend",
-      demoLink: "https://github.com/tswaliullah/care-point-server",
-      githubLink: "https://github.com/tswaliullah/care-point-server"
+      demoLink: "https://github.com/codisim/care-point-server",
+      githubLink: "https://github.com/codisim/care-point-server"
     },   
     {
       title: "Real Estate Project",
@@ -51,7 +51,7 @@ export default function Projects() {
       tags: ["React", "Next.js", "Tailwind CSS"],
       category: "frontend",
       demoLink: "https://dev-waliullah.vercel.app",
-      githubLink: "https://github.com/tswaliullah/portfolio"
+      githubLink: "https://github.com/codisim/portfolio"
     },
     {
       title: "Simple E-Commerce Website",
@@ -59,8 +59,8 @@ export default function Projects() {
       image: "https://i.ibb.co.com/LhDtJDdn/image.png",
       tags: ["Golang", "Postgresql", "Jwt"],
       category: "backend",
-      demoLink: "https://github.com/tswaliullah/ecommerce", 
-      githubLink: "https://github.com/tswaliullah/ecommerce"
+      demoLink: "https://github.com/codisim/ecommerce", 
+      githubLink: "https://github.com/codisim/ecommerce"
     }, 
     {
       title: "Chit Chat Application",
@@ -69,7 +69,7 @@ export default function Projects() {
       tags: ["WebSockets", "JavaScript", "Node.js", "Express", "React"],
       category: "fullstack",
       demoLink: "https://text-here.vercel.app",
-      githubLink: "https://github.com/tswaliullah/chit-chat-server"
+      githubLink: "https://github.com/codisim/chit-chat-server"
     }
   ]
 
