@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import { 
   SiJavascript, 
   SiTypescript, 
@@ -19,67 +18,99 @@ import {
   SiGit, 
   SiGithub, 
   SiPostman,
-  SiFramer
+  SiFramer,
+  SiShadcnui
 } from "react-icons/si";
+import { motion } from 'framer-motion'
 import { VscCode } from "react-icons/vsc";
 
-const skillCategories = [
-  {
-    title: "Frontend Development",
-    skills: [
-      { name: "JavaScript", icon: SiJavascript, color: "text-[#F7DF1E]" },
-      { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
-      { name: "React.js", icon: SiReact, color: "text-[#61DAFB]" },
-      { name: "Next.js", icon: SiNextdotjs, color: "text-foreground" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-[#06B6D4]" },
-      { name: "Framer Motion", icon: SiFramer, color: "text-[#0055FF]" },
-    ],
-  },
-  {
-    title: "Backend Development",
-    skills: [
-      { name: "Node.js", icon: SiNodedotjs, color: "text-[#339933]" },
-      { name: "Express.js", icon: SiExpress, color: "text-foreground" },
-      { name: "Golang", icon: SiGo, color: "text-[#00ADD8]" },
-    ],
-  },
-  {
-    title: "Database & ORM",
-    skills: [
-      { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#4169E1]" },
-      { name: "Prisma", icon: SiPrisma, color: "text-[#2D3748]" },
-      { name: "MongoDB", icon: SiMongodb, color: "text-[#47A248]" },
-      { name: "Mongoose", icon: SiMongoose, color: "text-[#880000]" },
-    ],
-  },
-  {
-    title: "Tools & DevOps",
-    skills: [
-      { name: "Docker", icon: SiDocker, color: "text-[#2496ED]" },
-      { name: "Git", icon: SiGit, color: "text-[#F05032]" },
-      { name: "GitHub", icon: SiGithub, color: "text-foreground" },
-      { name: "VS Code", icon: VscCode, color: "text-[#007ACC]" },
-      { name: "Postman", icon: SiPostman, color: "text-[#FF6C37]" },
-    ],
-  },
+const skillsRow1 = [
+  { name: "JavaScript", icon: SiJavascript, color: "text-[#F7DF1E]" },
+  { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
+  { name: "React.js", icon: SiReact, color: "text-[#61DAFB]" },
+  { name: "Next.js", icon: SiNextdotjs, color: "text-foreground" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-[#06B6D4]" },
+  { name: "Shadcn UI", icon: SiShadcnui, color: "text-[#18181B]" },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
+const skillsRow2 = [
+  { name: "Node.js", icon: SiNodedotjs, color: "text-[#339933]" },
+  { name: "Express.js", icon: SiExpress, color: "text-foreground" },
+  { name: "Golang", icon: SiGo, color: "text-[#00ADD8]" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#4169E1]" },
+  { name: "Node.js", icon: SiNodedotjs, color: "text-[#339933]" },
+  { name: "Prisma", icon: SiPrisma, color: "text-[#2D3748]" },
+  { name: "Express.js", icon: SiExpress, color: "text-foreground" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-[#47A248]" },
+  { name: "Mongoose", icon: SiMongoose, color: "text-[#880000]" },
+];
+
+const skillsRow3 = [
+  { name: "Docker", icon: SiDocker, color: "text-[#2496ED]" },
+  { name: "Git", icon: SiGit, color: "text-[#F05032]" },
+  { name: "GitHub", icon: SiGithub, color: "text-foreground" },
+  { name: "VS Code", icon: VscCode, color: "text-[#007ACC]" },
+  { name: "Postman", icon: SiPostman, color: "text-[#FF6C37]" },
+];
+
+const SkillCard = ({
+  name,
+  icon: Icon,
+  color,
+}: {
+  name: string;
+  icon: any;
+  color: string;
+}) => {
+  return (
+    <div className="relative flex h-16 w-44 items-center gap-4 rounded-xl border border-border bg-background/50 p-4 hover:bg-accent/50 transition-colors">
+      <div className={cn("text-2xl", color)}>
+        <Icon />
+      </div>
+      <span className="font-medium text-sm">{name}</span>
+    </div>
+  );
 };
 
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
+const Marquee = ({
+  className,
+  reverse,
+  pauseOnHover = false,
+  children,
+  repeat = 4,
+  ...props
+}: {
+  className?: string;
+  reverse?: boolean;
+  pauseOnHover?: boolean;
+  children?: React.ReactNode;
+  repeat?: number;
+  [key: string]: any;
+}) => {
+  return (
+    <div
+      {...props}
+      className={cn(
+        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        className
+      )}
+    >
+      {Array(repeat)
+        .fill(0)
+        .map((_, i) => (
+          <div
+            key={i}
+            className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {
+              "animate-marquee": !reverse,
+              "animate-marquee-reverse": reverse,
+              "group-hover:[animation-play-state:paused]": pauseOnHover,
+            })}
+          >
+            {children}
+          </div>
+        ))}
+    </div>
+  );
 };
 
 export default function Skills() {
@@ -92,59 +123,59 @@ export default function Skills() {
       </div>
 
       <div className="container px-4 mx-auto relative z-10">
-        <motion.div
+         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-600">
-            Skills & Technologies
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I've built a diverse set of skills across the full stack, focusing on modern technologies that enable fast, scalable, and beautiful web applications.
-          </p>
+          <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
         </motion.div>
 
-        <div className="space-y-20">
-          {skillCategories.map((category, i) => (
-            <div key={i}>
-              <motion.h3 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="text-2xl font-semibold mb-8 flex items-center gap-3"
-              >
-                <span className="w-8 h-[2px] bg-primary" />
-                {category.title}
-              </motion.h3>
-              
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
-              >
-                {category.skills.map((skill, j) => (
-                  <motion.div key={j} variants={itemVariants}>
-                    <Card className="group relative p-6 flex flex-col items-center justify-center gap-4 border-2 border-transparent hover:border-primary/30 bg-background/50 backdrop-blur-sm transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(0,0,0,0.1)] hover:shadow-primary/20 hover:-translate-y-2">
-                      <div className={`text-4xl transition-all duration-500 group-hover:scale-110 ${skill.color}`}>
-                        <skill.icon />
-                      </div>
-                      <p className="font-medium text-sm md:text-base group-hover:text-primary transition-colors">
-                        {skill.name}
-                      </p>
-                      
-                      {/* Decorative corner */}
-                      <div className="absolute top-0 right-0 w-0 h-0 border-t-[10px] border-r-[10px] border-t-transparent border-r-transparent group-hover:border-t-primary/40 group-hover:border-r-primary/40 transition-all duration-500" />
-                    </Card>
-                  </motion.div>
+        <div className="relative flex flex-col gap-8">
+
+          {/* Row 2: Backend - Right to Left */}
+          <div className="relative flex flex-col gap-4">
+            {/* <h3 className="text-sm font-semibold text-muted-foreground ml-4 text-right mr-4">Backend & Database</h3> */}
+            <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background/0 md:shadow-xl">
+              <Marquee reverse pauseOnHover className="[--duration:35s]">
+                {skillsRow2.map((skill, i) => (
+                  <SkillCard key={i} {...skill} />
                 ))}
-              </motion.div>
+              </Marquee>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background dark:from-background"></div>
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background dark:from-background"></div>
             </div>
-          ))}
+          </div>
+
+           {/* Row 1: Frontend - Left to Right */}
+          <div className="relative flex flex-col gap-4">
+            {/* <h3 className="text-sm font-semibold text-muted-foreground ml-4">Frontend Development</h3> */}
+            <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background/0 md:shadow-xl">
+              <Marquee pauseOnHover className="[--duration:30s]">
+                {skillsRow1.map((skill, i) => (
+                  <SkillCard key={i} {...skill} />
+                ))}
+              </Marquee>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background dark:from-background"></div>
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background dark:from-background"></div>
+            </div>
+          </div>
+
+          {/* Row 3: Tools - Left to Right */}
+          <div className="relative flex flex-col gap-4">
+            {/* <h3 className="text-sm font-semibold text-muted-foreground ml-4">Tools & DevOps</h3> */}
+            <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background/0 md:shadow-xl">
+              <Marquee pauseOnHover className="[--duration:40s]">
+                {skillsRow3.map((skill, i) => (
+                  <SkillCard key={i} {...skill} />
+                ))}
+              </Marquee>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background dark:from-background"></div>
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background dark:from-background"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

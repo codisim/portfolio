@@ -97,7 +97,7 @@ export default function Hero() {
                 "Node.js",
                 "Express",
                 "React",
-                "Next.js",
+                // "Next.js",
                 "Docker",
               ].map((tech) => (
                 <div
