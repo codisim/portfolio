@@ -42,7 +42,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-70"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500 border border-green-300 shadow-sm"></span>
               </div>
-                <span>US/UK Time Zone Aligned</span>
+                <span className="text-gray-600 text-sm">US/UK Time Zone Aligned</span>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export default function Hero() {
                 "Node.js",
                 "Express",
                 "React",
-                // "Next.js",
+                "Next.js",
                 "Docker",
               ].map((tech) => (
                 <div
