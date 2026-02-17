@@ -5,16 +5,16 @@ import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Tabs, 
-  TabsList, 
-  TabsTrigger 
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger
 } from '@/components/ui/tabs'
 import Link from 'next/link'
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState<string>("all")
-  
+
   const projects = [
     {
       title: "Telemedicine Platform",
@@ -24,17 +24,17 @@ export default function Projects() {
       category: "backend",
       demoLink: "https://github.com/codisim/care-point-server",
       githubLink: "https://github.com/codisim/care-point-server"
-    },   
-    {
-      title: "Real Estate Project",
-      description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
-      image: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["Typescript", "Next.js", "Express.js", "MongoDB"],
-      category: "fullstack",
-      demoLink: "https://real-state-client-peach.vercel.app",
-      githubLink: "https://github.com/engWaliullah/real-state-project-client",
-      backend: "https://github.com/engWaliullah/real-state-backend"
     },
+    {
+      title: "Simple E-Commerce Website",
+      description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
+      image: "https://i.ibb.co.com/LhDtJDdn/image.png",
+      tags: ["Golang", "Postgresql", "Jwt"],
+      category: "backend",
+      demoLink: "https://github.com/codisim/ecommerce",
+      githubLink: "https://github.com/codisim/ecommerce"
+    },
+
     {
       title: "University Management System",
       description: "A backend service providing RESTful APIs with Role based access control for managing university data. Faculty, Department, offerd course, enrolled course, student, and admin management.",
@@ -54,15 +54,6 @@ export default function Projects() {
       githubLink: "https://github.com/codisim/portfolio"
     },
     {
-      title: "Simple E-Commerce Website",
-      description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
-      image: "https://i.ibb.co.com/LhDtJDdn/image.png",
-      tags: ["Golang", "Postgresql", "Jwt"],
-      category: "backend",
-      demoLink: "https://github.com/codisim/ecommerce", 
-      githubLink: "https://github.com/codisim/ecommerce"
-    }, 
-    {
       title: "Chit Chat Application",
       description: "A real-time chat application with group chats.",
       image: "https://i.ibb.co.com/JWm4Jn8s/image.png",
@@ -70,11 +61,21 @@ export default function Projects() {
       category: "fullstack",
       demoLink: "https://text-here.vercel.app",
       githubLink: "https://github.com/codisim/chit-chat-server"
-    }
+    },
+    {
+      title: "Real Estate Project",
+      description: "A full-featured Real Estate Project with product listings, cart functionality, payment integration, and user authentication.",
+      image: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      tags: ["Typescript", "Next.js", "Express.js", "MongoDB"],
+      category: "fullstack",
+      demoLink: "https://real-state-client-peach.vercel.app",
+      githubLink: "https://github.com/engWaliullah/real-state-project-client",
+      backend: "https://github.com/engWaliullah/real-state-backend"
+    },
   ]
 
-  const filteredProjects = activeTab === "all" 
-    ? projects 
+  const filteredProjects = activeTab === "all"
+    ? projects
     : projects.filter(project => project.category === activeTab)
 
   return (
@@ -109,23 +110,23 @@ export default function Projects() {
             >
               <Card className="overflow-hidden h-full group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary">
                 <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     <Link
-                      href={project.demoLink} 
-                      target="_blank" 
+                      href={project.demoLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors duration-300"
                     >
                       <ExternalLink className="h-5 w-5 text-white" />
                     </Link>
                     <Link
-                      href={project.githubLink} 
-                      target="_blank" 
+                      href={project.githubLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors duration-300"
                     >
@@ -162,7 +163,7 @@ export default function Projects() {
           </Button>
         </div> */}
 
-        
+
       </div>
     </section>
   )

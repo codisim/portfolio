@@ -41,8 +41,8 @@ export default function HeroContent() {
           {[
             "TypeScript",
             "Node.js",
-            "Express",
-            "React",
+            "Nest.Js",
+            // "React",
             "Next.js",
             "Docker",
           ].map((tech) => (
