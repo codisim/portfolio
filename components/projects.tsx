@@ -19,7 +19,7 @@ export default function Projects() {
     {
       title: "Tech Conference Management System",
       description: "A robust and scalable event management API built with NestJS, a progressive Node.js framework.",
-      image: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
+      image: "https://i.ibb.co.com/C5LjptRW/image.png",
       tags: ["Typescript", "Nest.js", "Postgresql", "Prisma", "JWT", "Swagger", "Stripe"],
       category: "backend",
       demoLink: "https://github.com/codisim/tech-conference",
