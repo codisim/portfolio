@@ -17,6 +17,15 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Tech Conference Management System",
+      description: "A robust and scalable event management API built with NestJS, a progressive Node.js framework.",
+      image: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
+      tags: ["Typescript", "Nest.js", "Postgresql", "Prisma", "JWT", "Swagger", "Stripe"],
+      category: "backend",
+      demoLink: "https://github.com/codisim/tech-conference",
+      githubLink: "https://github.com/codisim/tech-conference"
+    },
+    {
       title: "Telemedicine Platform",
       description: "A backend service for a telemedicine platform enabling virtual consultations between patients and healthcare providers. AI driven doctor suggestions. Role based access control for patients, doctors, and admins. Appointment scheduling, medical records management, payment and testimonial management.",
       image: "https://i.ibb.co.com/bR2SqHxX/ERD.png",
@@ -26,7 +35,7 @@ export default function Projects() {
       githubLink: "https://github.com/codisim/care-point-server"
     },
     {
-      title: "Simple E-Commerce Website",
+      title: "E-Commerce Website",
       description: "A full-featured e-commerce website with product listings, cart functionality, and user authentication.",
       image: "https://i.ibb.co.com/LhDtJDdn/image.png",
       tags: ["Golang", "Postgresql", "Jwt"],
@@ -43,15 +52,6 @@ export default function Projects() {
       category: "backend",
       demoLink: "https://github.com/engWaliullah/University_Management",
       githubLink: "https://github.com/engWaliullah/University_Management"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing work experience, skills, and projects.",
-      image: "https://i.ibb.co.com/TDdJxQf7/image.png",
-      tags: ["React", "Next.js", "Tailwind CSS"],
-      category: "frontend",
-      demoLink: "https://dev-waliullah.vercel.app",
-      githubLink: "https://github.com/codisim/portfolio"
     },
     {
       title: "Chit Chat Application",
