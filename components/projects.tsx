@@ -17,7 +17,7 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Tech Conference Management System",
+      title: "Tech Conference",
       description: "A robust and scalable event management API built with NestJS, a progressive Node.js framework.",
       image: "https://i.ibb.co.com/C5LjptRW/image.png",
       tags: ["Typescript", "Nest.js", "Postgresql", "Prisma", "JWT", "Swagger", "Stripe"],
