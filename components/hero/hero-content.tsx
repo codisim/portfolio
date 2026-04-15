@@ -39,12 +39,11 @@ export default function HeroContent() {
         {/* Compact tech pills */}
         <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 text-[10px] sm:text-xs">
           {[
-            "GO",
             "TypeScript",
             "Node.js",
-            "Nest.Js",
+            // "Nest.Js",
             "React",
-            // "Next.js",
+            "Next.js",
             "Docker",
           ].map((tech) => (
             <div
