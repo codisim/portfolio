@@ -11,9 +11,10 @@ export default function MainContent() {
             sequence={[
               "Full-Stack Developer",
               2200,
-              "Backend Engineer",
+              // "Backend Engineer",
               2200,
-              // "Node.js + TypeScript",
+              // "React.js + Node.js + TypeScript",
+              "Website Developer",
               1800,
             ]}
             wrapper="span"
@@ -24,8 +25,7 @@ export default function MainContent() {
       </h1>
 
       <p className="text-sm sm:text-base text-muted-foreground max-w-lg leading-relaxed">
-        Mid-level software engineer focused on scalable backends, cloud
-        infrastructure, performance optimization, and modern full-stack
+        Software developer focused on scalable backends, performance optimization, and modern full-stack
         development.
       </p>
 

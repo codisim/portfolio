@@ -14,6 +14,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Experience() {
 const workExperience = [
   {
+    company: "Nexist",
+    location: "Dhaka, Bangladesh",
+    title: "Software Developer (Part Time)",
+    period: "April 2026 – Present",
+    description:
+      "Develop LMS Wesite with Node.js and Typescript Based Ecosystem",
+    responsibilities: [
+      "Improve UI Experience",
+      "Building Admin dashbaord with React.js",
+      "Developed RESTful APIs using Mongoose, Express.js and Node.js",
+      // "Designed MongoDB schemas and queries with Mongoose",
+    ],
+  },
+  {
     company: "Asian It Inc.",
     location: "Sirajgong, Bangladesh",
     title: "Junior Front End Developer (Intern)",
@@ -115,7 +129,7 @@ const education = [
                         Key Responsibilities:
                       </h4>
                       <ul className="space-y-1">
-                        {job.responsibilities.map((resp, j) => (
+                        {job?.responsibilities?.map((resp, j) => (
                           <li key={j} className="flex items-start">
                             <ChevronRight className="mr-2 h-4 w-4 mt-1 flex-shrink-0 text-primary" />
                             <span className="text-sm text-muted-foreground">
