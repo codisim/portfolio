@@ -13,7 +13,6 @@ export default function MainContent() {
               2200,
               // "Backend Engineer",
               2200,
-              // "React.js + Node.js + TypeScript",
               "Website Developer",
               1800,
             ]}
