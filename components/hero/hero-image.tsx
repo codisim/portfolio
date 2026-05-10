@@ -54,10 +54,10 @@ export default function HeroImage() {
         {[
           "TypeScript",
           "Node.js",
-          "Nest.Js",
+          "Nest.js",
           "React",
           "Next.js",
-          "Docker",
+          // "Docker",
         ].map((tech) => (
           <motion.div
             key={tech}

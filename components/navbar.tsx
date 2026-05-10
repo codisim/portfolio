@@ -76,7 +76,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button asChild className="ml-4 relative overflow-hidden group">
               <Link href="/waliullah.pdf" download>
                 <span className="relative z-10">Resume</span>
